@@ -5,8 +5,8 @@ int endY = 150;
 void setup()
 {
   size(300,300);
-  strokeWeight(3);
-  background(0,0,0);
+  strokeWeight(2);
+  background(7,11,52);
 }
 void draw()
 {
@@ -23,6 +23,10 @@ void draw()
 }
 void mousePressed()
 {
+  if (Math.random() < 0.2)
+  {
+    background(7,11,52);
+  } 
   startX = 150;
   startY = 50;
   endX = 150;
@@ -36,4 +40,3 @@ void cloud()
   ellipse(130,50,40,40);
   ellipse(170,50,40,40);
 }
-
